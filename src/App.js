@@ -10,10 +10,10 @@ import Blog from './pages/Blog';
 function App() {
   return (
     <div>
-         <Route exact path={'/'} component={Home} />
+         <Route exact path={'/'} component={Blog} />
          <Route exact path={'/add-account'} component={AddAccount} />
          <Route exact path={'/subscription'} component={Subscription} />
-         <Route exact path={'/blog'} component={Blog} />
+         <Route exact path={'/home'} component={Home} />
     </div>
   );
 }
