@@ -34,8 +34,8 @@ function NewsCard() {
                   </div>
                   <div className="info-footer">
                     <a className="reading" href="#">إقرا المزيد</a>
-                    <span>مشاركة : </span>
                     <ul className="list-unstyled">
+                      <li class="share"><span>مشاركة : </span></li>
                       <li><a href="#"><img src={Facebook} alt="Facebook" /></a></li>
                       <li><a href="#"><img src={Twitter} alt="Twitter" /></a></li>
                       <li><a href="#"><img src={Instagram} alt="Instagram" /></a></li>
