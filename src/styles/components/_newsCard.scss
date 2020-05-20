@@ -1,0 +1,103 @@
+.news-card {
+    background-color: #FFF;
+    border: 1px solid $borderColor;
+    padding: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    @include prefixer(box-shadow, 0px 3px 10px #000, webkit moz o ms);
+    .main-row {
+        display: flex;
+        align-items: center;
+    }
+    
+    .card-image {
+        padding: 20px;
+        padding-right: 0;
+        border-left: 1.5px solid $borderColor;
+        
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .card-info {
+        .info-header {
+            .history {
+                display: flex;
+                font-size: 12px;
+                font-weight: 300;
+                a {
+                    display: flex;
+                    background-color: #D6C8C8;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 10px;
+                    align-self: center;
+                    img {
+                        width: 10px;
+                        height: 10px; 
+                    }
+                }
+            }
+            .news {
+                display: flex;
+                font-size: 13px;
+                font-weight: 500;
+                margin-top: 5px;
+            }
+        }
+
+        .info-desc {
+            h5 {
+                color: $themeColor;
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 500;
+                text-align: right;
+            }
+        }
+
+        .info-footer {
+            display: flex;
+            justify-content: space-between;
+            .reading {
+                display: inline-block;
+                padding: 8px 15px;
+                background-color: #000;
+                color: #FFF;
+                font-size: 13px;
+                font-weight: 700;
+                @include prefixer(box-shadow, 0px 3px 5px #000, webkit moz o ms);
+            }
+
+            span {
+                display: inline-block;
+            }
+
+            ul {
+                display: flex;
+                padding: 0;
+                li {
+                    margin-left: 5px;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .save {
+        position: absolute;
+        top: -1px;
+        left: 10px;
+    }
+}

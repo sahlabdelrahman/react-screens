@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    font-family: $tajawal;
+
+    a {
+        text-decoration: none !important;
+        color: #000;
+    }
+}
