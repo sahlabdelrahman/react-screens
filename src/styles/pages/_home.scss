@@ -1,0 +1,91 @@
+.home-page {
+    .main-heading {
+        margin: $smallMargin 0;
+        text-align: right;
+        h4 {
+            position: relative;
+            font-size: 20px;
+            font-weight: 700;
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: -8px;
+                right: -10px;
+                width: 11px;
+                height: 2px;
+                background-color: $themeColor;
+                border-radius: 2px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    header {
+        position: relative;
+        margin-bottom: $mainMargin;
+        
+        .heading-page {
+            
+            img {
+                position: absolute;
+                left: 0; 
+                right: 0;
+                top: -250px; 
+                margin-left: auto; 
+                margin-right: auto;
+                z-index: -1; 
+            }
+
+            h2 {
+                font-size: 22px;
+                font-weight: 700;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .premium-ghosts {
+        overflow: hidden;
+        
+    }
+
+    .search {
+        text-align: center;
+        margin: $smallMargin 0;
+    }
+
+    .pages-controls {
+        background-color: #000;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        a {
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 500;
+            position: relative;
+            
+            &.active {
+                opacity: 0.3;
+            }
+            &.hover:after {
+                content: '';
+                position: absolute;
+                bottom: -8px;
+                right: -5px;
+                width: 11px;
+                height: 2px;
+                background-color: #FFF;
+                border-radius: 2px;
+                margin-top: 10px;
+            }
+            &.premium {
+                color: #FF9900;
+            }
+        }
+    }
+}
