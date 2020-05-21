@@ -34,7 +34,7 @@ function AddAccount() {
                   <Form.Label>أسم الحساب</Form.Label>
                   <Form.Control type="email" />
                 </Form.Group>
-                <Form.Group controlId="formBasicEmail">
+                <Form.Group >
                   <Form.Label>أسم المستخدم</Form.Label>
                   <Form.Control type="text" />
                 </Form.Group>
@@ -63,7 +63,7 @@ function AddAccount() {
                     <option>...</option>
                   </Form.Control>
                 </Form.Group>
-                <Form.Group controlId="formBasicEmail">
+                <Form.Group >
                   <Form.Label>الرسالة</Form.Label>
                   <Form.Control type="text" />
                 </Form.Group>
