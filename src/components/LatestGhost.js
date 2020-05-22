@@ -24,7 +24,7 @@ function LatestGhost({persons}) {
       <>
         {persons.map(person => {
             return(
-                    <Col lg={6} key={person.id}>
+                    <Col lg={4} key={person.id}>
                     <div className="ghost-item">
                         <div className="heading-item">
                             <h2>{person.username}</h2>

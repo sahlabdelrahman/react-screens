@@ -22,7 +22,7 @@ function Blog() {
                 </a>
                 <h2 className="text-align">المدونة</h2>
               </div>
-              {/* Start Heading */}
+              {/* End Heading */}
 
               {/* Start Nav */}
               <nav>

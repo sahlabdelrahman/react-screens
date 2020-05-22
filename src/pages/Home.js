@@ -7,7 +7,8 @@ import { PersonConsumer } from '../Context';
 import HeadingImage from '../assets/images/home/logotype.svg';
 import PremiumCard from '../components/PremiumCard';
 import PersonsFilter from '../components/PersonsFilter';
-import LarestGhost from '../components/LarestGhost';
+import LatestGhost from '../components/LatestGhost';
+import Counter from '../components/Counter';
 
 import ProfileImage from '../assets/images/home/profile-image.svg';
 import GhostIcon from '../assets/images/home/ghost-icon.svg';
@@ -29,7 +30,7 @@ function Home() {
                       <img src={HeadingImage} alt="heading" />
                       <h2>الرئيسية</h2>
                     </div>
-                    {/* Start Heading */}
+                    {/* End Heading */}
 
                     {/* Start Nav */}
                     <nav className="d-none d-md-block">
@@ -99,7 +100,7 @@ function Home() {
                       <h4>آخر الأشباح</h4>
                     </div>
                     <Row>
-                      <LarestGhost persons={sortedPersons}/>
+                      <LatestGhost persons={sortedPersons}/>
                     </Row>
                   </Container>
                 </section>
@@ -114,7 +115,7 @@ function Home() {
                   <Link to="/subscription" className="premium">إشتراك</Link>
                   </Container>
                 </section>
-      
+                <Counter number={'1'} />
               </div>
              );
            }}

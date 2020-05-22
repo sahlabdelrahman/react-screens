@@ -14,12 +14,12 @@ function Report() {
             <Container>
               {/* Start Heading */}
               <div className="heading-page">
-                <a href="#">
+                <Link to="/">
                   <img src={Arrow} alt="Back" />
-                </a>
+                </Link>
                 <h2 className="text-align">ابلاغ</h2>
               </div>
-              {/* Start Heading */}
+              {/* End Heading */}
             </Container>
           </header>
           {/* End Header */}

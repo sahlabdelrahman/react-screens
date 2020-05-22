@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Container, Form } from 'react-bootstrap';
+import { Container, Form, Row, Col } from 'react-bootstrap';
+
+import Counter from '../components/Counter';
 
 import Arrow from '../assets/images/blog/icons/arrow.svg';
+import ArrowDown from '../assets/images/add-account/arrow-down.svg';
 import Background from '../assets/images/add-account/logotype.svg';
 
 function AddAccount() {
@@ -14,12 +17,27 @@ function AddAccount() {
             <Container>
               {/* Start Heading */}
               <div className="heading-page">
-                <a href="#">
+                <Link to="/">
                   <img src={Arrow} alt="Back" />
-                </a>
+                </Link>
                 <h2 className="text-align">أضف بياناتك</h2>
               </div>
-              {/* Start Heading */}
+              {/* End Heading */}
+              {/* Start Nav */}
+              <nav className="d-none d-md-block text-center">
+                      <Row>
+                        <Col md={4}>
+                        <Link to="/">الرئيسية </Link>
+                        </Col>
+                        <Col md={4}>
+                        <Link to="/add-account" className="active">إضافة حساب </Link>
+                        </Col>
+                        <Col md={4}>
+                        <Link to="/subscription">إشتراك</Link>
+                        </Col>
+                      </Row>
+                </nav>
+                {/* End Nav */}
             </Container>
           </header>
           {/* End Header */}
@@ -40,9 +58,10 @@ function AddAccount() {
                 </Form.Group>
                 <Form.Group controlId="formGridState">
                   <Form.Label>الدولة</Form.Label>
-                  <Form.Control as="select" value="Choose...">
+                  <select className="form-control">
+                    <img src={ArrowDown} />
                     <option>...</option>
-                  </Form.Control>
+                  </select>
                 </Form.Group>
                 <Form.Group controlId="formGridState">
                   <Form.Label>المدينة</Form.Label>
@@ -80,6 +99,7 @@ function AddAccount() {
               <Link to="/subscription" className="premium">إشتراك</Link>
               </Container>
           </section>
+          <Counter number={'2'} />
     </div>
   );
 }

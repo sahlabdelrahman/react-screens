@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Container, Form } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+
+import Counter from '../components/Counter';
 
 import Arrow from '../assets/images/blog/icons/arrow.svg';
 import Background from '../assets/images/add-account/logotype.svg';
@@ -14,12 +16,27 @@ function Subscription() {
             <Container>
               {/* Start Heading */}
               <div className="heading-page">
-                <a href="#">
+                <Link to="/add-account">
                   <img src={Arrow} alt="Back" />
-                </a>
+                </Link>
                 <h2 className="text-align">إشتراك</h2>
               </div>
-              {/* Start Heading */}
+              {/* End Heading */}
+              {/* Start Nav */}
+              <nav className="d-none d-md-block text-center">
+                      <Row>
+                        <Col md={4}>
+                        <Link to="/" >الرئيسية </Link>
+                        </Col>
+                        <Col md={4}>
+                        <Link to="/add-account">إضافة حساب </Link>
+                        </Col>
+                        <Col md={4}>
+                        <Link to="/subscription" className="active">إشتراك</Link>
+                        </Col>
+                      </Row>
+                </nav>
+                {/* End Nav */}
             </Container>
           </header>
           {/* End Header */}
@@ -41,6 +58,7 @@ function Subscription() {
               <Link to="/subscription" className="premium">إشتراك</Link>
               </Container>
           </section>
+          <Counter number={'3'} />
     </div>
   );
 }

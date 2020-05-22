@@ -1,14 +1,18 @@
 .persons-filter {
     .search-form {
-        height: 300px;
+        height: 359px;
         width: auto;
-        background-image: url('../../assets/images/home/search.svg');
+        background-image: url('../../assets/images/add-account/logotype.svg');
         background-position: center;
         background-repeat: no-repeat;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
+        @media #{$maxMobile} {
+            height: 300px;
+            background-image: url('../../assets/images/home/search.svg'); 
+        }
         .form-control {
             width: 120px;
             height: 42px;
@@ -25,6 +29,7 @@
             &::placeholder {
                 color: #000;
             }
+
         }
     }
 
