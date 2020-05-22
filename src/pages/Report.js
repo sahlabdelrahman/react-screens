@@ -44,7 +44,7 @@ function Report() {
                 </Form.Group>
                 </Form>
               </div>
-              <a href="#">ابلاغ</a>
+              <a href="/#">ابلاغ</a>
             </Container>
           </section>
           {/* End Body */}

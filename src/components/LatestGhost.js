@@ -32,13 +32,13 @@ function LatestGhost({persons}) {
                         <div className="content-item">
                             <Row>
                                 <Col xs={4}>
-                                <h4> <img src={Country } />&nbsp;  الدولة</h4>
+                                <h4> <img src={Country } alt="icon" />&nbsp;  الدولة</h4>
                                 </Col>
                                 <Col xs={4}>
-                                    <h4> <img src={City } />&nbsp;  المدينة</h4>
+                                    <h4> <img src={City } alt="icon" />&nbsp;  المدينة</h4>
                                 </Col>
                                 <Col xs={4}>
-                                <h4> <img src={Age } />&nbsp;  العمر</h4>
+                                <h4> <img src={Age } alt="icon" />&nbsp;  العمر</h4>
                                 </Col>
                                 <Col xs={4}>
                                     <h5>{person.country}</h5>
@@ -52,13 +52,13 @@ function LatestGhost({persons}) {
                             </Row>
                             <Row>
                                 <Col xs={4}>
-                                <h4> <img src={Sex } width="20px" height="15px" />&nbsp;  النوع</h4>
+                                <h4> <img src={Sex } alt="icon" width="20px" height="15px" />&nbsp;  النوع</h4>
                                 </Col>
                                 <Col xs={4}>
-                                <h4> <img src={Cal } />&nbsp;  التاريخ</h4>
+                                <h4> <img src={Cal } alt="icon" />&nbsp;  التاريخ</h4>
                                 </Col>
                                 <Col xs={4}>
-                                <h4> <img src={Clock } width="20px" height="15px" />&nbsp;  الوقت</h4>
+                                <h4> <img src={Clock } alt="icon" width="20px" height="15px" />&nbsp;  الوقت</h4>
                                 </Col>
                                 <Col xs={4}>
                                     <h5>{person.sex}</h5>
@@ -72,19 +72,19 @@ function LatestGhost({persons}) {
                             </Row>
                             <Row className="d-flex justify-content-center">
                                 <Col xs={12}>
-                                    <a className="button-bg" href="#">الرسالة</a>
+                                    <a className="button-bg" href="/#">الرسالة</a>
                                 </Col>
                                 <Col xs={4}>
                                     <Link to="/report" className="button-sm text-danger">التبليغ</Link>
                                 </Col>
                                 <Col  xs={4}>
-                                    <a className="button-sm" href="#">الإضافة</a>
+                                    <a className="button-sm" href="/#">الإضافة</a>
                                 </Col>
                             </Row>
                         </div>
                         <div className="footer-item">
                             <ul className="list-unstyled">
-                                <li><a href="#">تاقز</a></li>
+                                <li><a href="/#">تاقز</a></li>
                             </ul>
                         </div>
                     </div>

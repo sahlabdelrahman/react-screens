@@ -18,7 +18,7 @@ function Home() {
   return (
          <PersonConsumer>
            {(value) => {
-             const {loading, persons, sortedPersons } = value;
+             const {persons, sortedPersons } = value;
              return(
                <div className="home-page text-center">
               
@@ -71,7 +71,7 @@ function Home() {
                               <img src={GhostIcon} alt="Profile" />
                             </div>
                             <h3>بدون إسم</h3>
-                            <a href="#">
+                            <a href="/#">
                               <span>متاح للإشتراك</span> 
                             </a>
                         </div>

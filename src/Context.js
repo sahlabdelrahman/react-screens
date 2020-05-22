@@ -57,7 +57,6 @@ class ProductProvider extends Component {
         
         // filter by name
         if(username !== ''){
-            console.log(username);
             tempPersons = tempPersons.filter((person) => {
                 return person.username.indexOf(this.state.username) !== -1;
             });
@@ -65,19 +64,16 @@ class ProductProvider extends Component {
 
         // filter by country
         if(country !== ''){
-            console.log(country);
             tempPersons = tempPersons.filter(person => person.country === country);
         };
 
         // filter by city
         if(city !== ''){
-            console.log(city);
             tempPersons = tempPersons.filter(person => person.city === city);
         };
 
         // filter by age
         if(age > 0){
-            console.log(age);
             tempPersons = tempPersons.filter(person => person.age === age);
         };
 

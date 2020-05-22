@@ -12,7 +12,7 @@ function PremiumCard(props) {
                   <img src={props.Image} alt="Profile" />
                 </div>
                 <h3>{props.name}</h3>
-                <a href="#">
+                <a href="/#">
                   <img src={props.ImageIcon} alt="Icon" />
                   <span>{props.nameLink}</span> 
                 </a>

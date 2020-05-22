@@ -6,7 +6,6 @@ import { Container, Form, Row, Col } from 'react-bootstrap';
 import Counter from '../components/Counter';
 
 import Arrow from '../assets/images/blog/icons/arrow.svg';
-import ArrowDown from '../assets/images/add-account/arrow-down.svg';
 import Background from '../assets/images/add-account/logotype.svg';
 
 function AddAccount() {
@@ -59,25 +58,24 @@ function AddAccount() {
                 <Form.Group controlId="formGridState">
                   <Form.Label>الدولة</Form.Label>
                   <select className="form-control">
-                    <img src={ArrowDown} />
                     <option>...</option>
                   </select>
                 </Form.Group>
                 <Form.Group controlId="formGridState">
                   <Form.Label>المدينة</Form.Label>
-                  <Form.Control as="select" value="Choose...">
+                  <Form.Control as="select" defaultValue="Choose...">
                     <option>...</option>
                   </Form.Control>
                 </Form.Group>
                 <Form.Group controlId="formGridState">
                   <Form.Label>الجنس</Form.Label>
-                  <Form.Control as="select" value="Choose...">
+                  <Form.Control as="select" defaultValue="Choose...">
                     <option>...</option>
                   </Form.Control>
                 </Form.Group>
                 <Form.Group controlId="formGridState">
                   <Form.Label>العمر</Form.Label>
-                  <Form.Control as="select" value="Choose...">
+                  <Form.Control as="select" defaultValue="Choose...">
                     <option>...</option>
                   </Form.Control>
                 </Form.Group>
@@ -87,7 +85,7 @@ function AddAccount() {
                 </Form.Group>
                 </Form>
               </div>
-              <a href="#">أضف حسابك</a>
+              <a href="/#">أضف حسابك</a>
             </Container>
           </section>
           {/* End Body */}

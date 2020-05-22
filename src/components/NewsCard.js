@@ -24,7 +24,7 @@ function NewsCard() {
                 <div className="card-info">
                   <div className="info-header">
                     <span className="history">
-                      <a href="#"><img src={Arrow} alt="Arrow"/></a> 5 إبريل 2020
+                      <a href="/#"><img src={Arrow} alt="Arrow"/></a> 5 إبريل 2020
                     </span>
                     <span className="news">الأخبار</span>
                   </div>
@@ -33,13 +33,13 @@ function NewsCard() {
                     <p>منزلك حاليًا هو واحد من أكثر الأماكن أمانًا لتجنب فيروس كورونا لا تتركه إلا إذا كان هناك خطر وشيك بحدوث أذى جسدي أو عنف تجاهك أو ضد الأطفال  ...</p>
                   </div>
                   <div className="info-footer">
-                    <a className="reading" href="#">إقرا المزيد</a>
+                    <a className="reading" href="/#">إقرا المزيد</a>
                     <ul className="list-unstyled">
-                      <li class="share"><span>مشاركة : </span></li>
-                      <li><a href="#"><img src={Facebook} alt="Facebook" /></a></li>
-                      <li><a href="#"><img src={Twitter} alt="Twitter" /></a></li>
-                      <li><a href="#"><img src={Instagram} alt="Instagram" /></a></li>
-                      <li><a href="#"><img src={Linkedin} alt="Linkedin" /></a></li>
+                      <li className="share"><span>مشاركة : </span></li>
+                      <li><a href="/#"><img src={Facebook} alt="Facebook" /></a></li>
+                      <li><a href="/#"><img src={Twitter} alt="Twitter" /></a></li>
+                      <li><a href="/#"><img src={Instagram} alt="Instagram" /></a></li>
+                      <li><a href="/#"><img src={Linkedin} alt="Linkedin" /></a></li>
                     </ul>
                   </div>
                 </div>

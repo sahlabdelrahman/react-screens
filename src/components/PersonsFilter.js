@@ -13,9 +13,6 @@ function PersonsFilter({persons}) {
       {(value) => {
 
         const {handleChange, username, country, city, age} = value;
-
-        // get unique names
-        let names = getUnique(persons, 'username');
         
         // get unique countries
         let countries = getUnique(persons, 'country');
@@ -106,7 +103,7 @@ function PersonsFilter({persons}) {
                 {/* end select city */}
             </form>
           </div>
-          <a href="#">بحث</a>
+          <a href="/#">بحث</a>
         </div>
       );
       }}

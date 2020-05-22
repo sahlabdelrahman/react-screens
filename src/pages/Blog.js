@@ -17,7 +17,7 @@ function Blog() {
               
               {/* Start Heading */}
               <div className="heading-page">
-                <a href="#">
+                <a href="/#">
                   <img src={Arrow} alt="Back" />
                 </a>
                 <h2 className="text-align">المدونة</h2>
@@ -28,16 +28,16 @@ function Blog() {
               <nav>
                 <Row>
                   <Col xs={6} md={3}>
-                    <a className="active" href="#">الكل</a>
+                    <a className="active" href="/#">الكل</a>
                   </Col>
                   <Col xs={6} md={3}>
-                    <a href="#">الاخبار</a>
+                    <a href="/#">الاخبار</a>
                   </Col>
                   <Col xs={6} md={3}>
-                    <a href="#">المقالات</a>
+                    <a href="/#">المقالات</a>
                   </Col>
                   <Col xs={6} md={3}>
-                    <a href="#">المفضلة</a>
+                    <a href="/#">المفضلة</a>
                   </Col>
                 </Row>
               </nav>
@@ -69,7 +69,7 @@ function Blog() {
             {/* Start Read more button */}
             <section className="read-more text-center">
               <Container>
-                <a href="#">إقرا المزيد</a>
+                <a href="/#">إقرا المزيد</a>
               </Container>
             </section>
             {/* End Read more button */}
