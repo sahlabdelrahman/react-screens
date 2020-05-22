@@ -51,11 +51,7 @@
     }
 
     .subscription-body {
-        margin: $mainMargin 0;
-        @media #{$maxSmall} {
-            padding-bottom: $mainPadding;
-    
-        }
+        margin: $smallMargin 0;
         .subscription-form {
             position: relative;
             display: flex;
