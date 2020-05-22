@@ -30,7 +30,6 @@ function Subscription() {
               <div className="subscription-form">
                 <img src={Background} alt="background" />
               </div>
-              <a href="#">إشتراك</a>
             </Container>
           </section>
           {/* End Body */}

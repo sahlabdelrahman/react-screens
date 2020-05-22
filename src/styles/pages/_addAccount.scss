@@ -75,6 +75,14 @@
                             height: 21px;
                         }
                     }
+
+                    select {
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        -o-appearance: none;
+                        -ms-appearance: none;
+                        appearance: none;
+                    }
                 }
             }
         }

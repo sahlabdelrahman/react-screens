@@ -53,8 +53,7 @@ function AddAccount() {
                 <Form.Group controlId="formGridState">
                   <Form.Label>الجنس</Form.Label>
                   <Form.Control as="select" value="Choose...">
-                    <option>ذكر</option>
-                    <option>انثي</option>
+                    <option>...</option>
                   </Form.Control>
                 </Form.Group>
                 <Form.Group controlId="formGridState">

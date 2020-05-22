@@ -30,6 +30,22 @@ function Home() {
                       <h2>الرئيسية</h2>
                     </div>
                     {/* Start Heading */}
+
+                    {/* Start Nav */}
+                    <nav className="d-none d-md-block">
+                      <Row>
+                        <Col md={4}>
+                        <Link to="/" className="active">الرئيسية </Link>
+                        </Col>
+                        <Col md={4}>
+                        <Link to="/add-account">إضافة حساب </Link>
+                        </Col>
+                        <Col md={4}>
+                        <Link to="/subscription">إشتراك</Link>
+                        </Col>
+                      </Row>
+                    </nav>
+                    {/* End Nav */}
                   </Container>
                 </header>
                 {/* End Header */}
